@@ -48,7 +48,6 @@ header .logo{
 main{
   display: flex;
   height: calc(100vh - 90px);
-  z-index: 700;
 }
 
 aside{
@@ -186,6 +185,7 @@ aside nav a img{
   width: calc(100% - 230px);
   height: calc(100vh - 90px);
   background-color: #141922;
+  min-height: 543px;
 }
 
 /* FOOTER */
