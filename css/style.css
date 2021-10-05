@@ -57,6 +57,7 @@ aside{
   width: 230px;
   height: calc(100vh - 90px);
   padding-top: 96px;
+  min-height: 543px;
 }
 
 aside a{
@@ -164,8 +165,9 @@ aside nav a img{
 }
 
 .aside-foot .user span{
-  font-size: 20px;
+  font-size: 15px;
   color: white;
+  vertical-align: middle;
 }
 
 .aside-foot .user img{
@@ -173,6 +175,7 @@ aside nav a img{
   height: 20px;
   background-color: #808080;
   border-radius: 50%;
+  vertical-align: middle;
 }
 
 
@@ -188,8 +191,9 @@ aside nav a img{
 /* FOOTER */
 
 footer{
+  position: fixed;
   background-color: #282828;
   height: 90px;
   width: 100%;
-  z-index: 800;
+  z-index: 900;
 }
