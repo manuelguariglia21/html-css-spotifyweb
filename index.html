@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
   <title>Spotify Web</title>
 </head>
 <b>
@@ -16,7 +19,10 @@
       <img src="img/logo.svg" alt="Spotify">
     </div>
 
-    <div class="btn header"><a href="#"><span>Effettua Upgrade</span></a></div>
+    <nav>
+      <div class="btn header"><a href="#"><span>Effettua l'Upgrade</span></a></div>
+    </nav>
+    
 
   </header>
   <!-- /HEADER -->
@@ -26,9 +32,13 @@
 
     <aside>
       <ul>
-        <li><a href="#"><span>Home</span></a></li>
-        <li><a href="#"><span>Cerca</span></a></li>
-        <li><a href="#"><span>La tua libreria</span></a></li>
+
+        <li><a href="#" class="active"><img src="img/home.svg" alt="Home"><span>Home</span></a></li>
+
+        <li><a href="#"><img src="img/search.svg" alt="Cerca"><span>Cerca</span></a></li>
+
+        <li><a href="#"><img src="img/libreria.svg" alt="Libreria"><span>La tua libreria</span></a></li>
+
       </ul>
     </aside>
 
@@ -43,7 +53,7 @@
 
   <!-- FOOTER -->
   <footer>
-    
+
   </footer>
   <!-- /FOOTER -->
   

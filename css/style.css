@@ -4,6 +4,26 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* BUTTON */
+
+.btn a{
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 15px 40px;
+  text-decoration: none;
+}
+
+.btn a span{
+  color: white;
+  text-transform: uppercase;
+}
+
+/* HEADER */
+
 header{
   position: fixed;
   height: 90px;
@@ -12,16 +32,23 @@ header{
   justify-content: space-between;
   padding: 20px 20px 0 20px;
   background-color: rgba(0, 0, 0, .5);
+  z-index: 800;
 }
 
 header .logo{
   width: 130px;
 }
 
+nav{
+  margin-top: 17px;
+}
+
 /* MAIN */
 
 main{
   display: flex;
+  height: calc(100vh - 90px);
+  z-index: 700;
 }
 
 aside{
@@ -29,6 +56,37 @@ aside{
   background-color: black;
   width: 230px;
   height: calc(100vh - 90px);
+  padding-top: 96px;
+}
+
+aside a{
+  text-decoration: none;
+}
+
+aside a span{
+  color: #6d6d6d;
+  font-size: 13px;
+}
+
+aside ul li{
+  padding: 7px;
+}
+
+aside ul li a{
+  padding: 7px 23px;
+  border-left: 3px solid transparent;
+}
+
+aside ul li .active{
+  color: white;
+  padding: 7px 23px;
+  border-left: 3px solid #adff2f;
+}
+
+aside a img{
+  width: 21px;
+  vertical-align: middle;
+  margin-right: 9px;
 }
 
 .library{
@@ -43,4 +101,5 @@ footer{
   background-color: #282828;
   height: 90px;
   width: 100%;
+  z-index: 800;
 }
