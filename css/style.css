@@ -3,3 +3,44 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+header{
+  position: fixed;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 0 20px;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+header .logo{
+  width: 130px;
+}
+
+/* MAIN */
+
+main{
+  display: flex;
+}
+
+aside{
+  align-self: flex-start;
+  background-color: black;
+  width: 230px;
+  height: calc(100vh - 90px);
+}
+
+.library{
+  width: calc(100% - 230px);
+  height: calc(100vh - 90px);
+  background-color: #141922;
+}
+
+/* FOOTER */
+
+footer{
+  background-color: #282828;
+  height: 90px;
+  width: 100%;
+}
