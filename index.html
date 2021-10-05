@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css" integrity="sha512-ioRJH7yXnyX+7fXTQEKPULWkMn3CqMcapK0NNtCN8q//sW7ZeVFcbMJ9RvX99TwDg6P8rAH2IqUSt2TLab4Xmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Spotify Web</title>
 </head>
 <b>
@@ -19,11 +20,10 @@
       <img src="img/logo.svg" alt="Spotify">
     </div>
 
-    <nav>
+    <section class="button-box">
       <div class="btn header"><a href="#"><span>Effettua l'Upgrade</span></a></div>
-    </nav>
+    </section>
     
-
   </header>
   <!-- /HEADER -->
 
@@ -31,15 +31,68 @@
   <main>
 
     <aside>
-      <ul>
+      <section class="aside-start">
+        <!-- nav -->
+        <nav>
+          <ul>
 
-        <li><a href="#" class="active"><img src="img/home.svg" alt="Home"><span>Home</span></a></li>
+            <li><a href="#" class="active"><img src="img/home.svg" alt="Home"><span>Home</span></a></li>
 
-        <li><a href="#"><img src="img/search.svg" alt="Cerca"><span>Cerca</span></a></li>
+            <li><a href="#"><img src="img/search.svg" alt="Cerca"><span>Cerca</span></a></li>
 
-        <li><a href="#"><img src="img/libreria.svg" alt="Libreria"><span>La tua libreria</span></a></li>
+            <li><a href="#"><img src="img/libreria.svg" alt="Libreria"><span>La tua libreria</span></a></li>
 
-      </ul>
+          </ul>
+        </nav>
+        <!-- /nav -->
+
+        <!-- playlist -->
+        <div class="playlist">
+          <div class="playlist-top">
+            <h4>Playlist</h4>
+            <a href="#">
+              <i class="fas fa-plus-square"></i>
+              <span>Crea Playlist</span>
+            </a>
+          </div>
+
+          <div class="playlist-list">
+            <ul>
+              <li><a href="#"><span>Nome Playlist</span></a></li>
+              <li><a href="#"><span>Nome Playlist</span></a></li>
+              <li><a href="#"><span>Nome Playlist</span></a></li>
+              <li><a href="#"><span>Nome Playlist</span></a></li>
+              <li><a href="#"><span>Nome Playlist</span></a></li>
+              <li><a href="#"><span>Nome Playlist</span></a></li>
+              <li><a href="#"><span>Nome Playlist</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- /playlist -->
+      </section>
+
+      <!-- aside-foot -->
+      <section class="aside-foot">
+        <div class="install">
+          <a href="#">
+            <img src="img/download.svg" alt="Install">
+            <span>Installa app</span>
+          </a>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="user">
+          <a href="#">
+            <img src="img/profile.svg" alt="Install">
+            <span>Jhon Doe</span>
+          </a>
+        </div>
+
+
+      </section>
+      <!-- /aside foot -->
+
     </aside>
 
     <section class="library">

@@ -39,7 +39,7 @@ header .logo{
   width: 130px;
 }
 
-nav{
+.button-box{
   margin-top: 17px;
 }
 
@@ -65,29 +65,119 @@ aside a{
 
 aside a span{
   color: #6d6d6d;
+}
+
+aside .aside-start{
+  height: calc(100% - 73px);
+  overflow: hidden;
+}
+
+
+aside nav a span{
   font-size: 13px;
 }
 
-aside ul li{
-  padding: 7px;
+aside nav ul li{
+  padding: 7px 0;
 }
 
-aside ul li a{
+aside nav ul li:last-of-type{
+  padding: 7px 0 25px 0;
+}
+
+aside nav ul li a{
   padding: 7px 23px;
   border-left: 3px solid transparent;
 }
 
-aside ul li .active{
-  color: white;
+aside nav ul li .active{
   padding: 7px 23px;
   border-left: 3px solid #adff2f;
 }
 
-aside a img{
+aside nav ul li .active span{
+  color: white;
+}
+
+
+aside nav a img{
   width: 21px;
   vertical-align: middle;
   margin-right: 9px;
 }
+
+/* playlist */
+
+.playlist{
+  margin-left: 26px;
+  font-size: 15px;
+}
+.playlist-top h4{
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.playlist-top i{
+  color: #a3a3a3;
+  font-size: 37px;
+  vertical-align: middle;
+  margin-right: 11px;
+}
+
+.playlist-list{
+  max-height: 25vh;
+  overflow: scroll;
+}
+
+.playlist-list ul{
+  list-style: none;
+}
+
+.playlist-list ul li{
+  padding-top: 20px;
+}
+
+/* aside foot */
+
+.aside-foot{
+  background-color: black;
+  height: 73px;
+  width: 100%;
+  padding: 0 23px;
+}
+
+.aside-foot .install span{
+  font-size: 13px;
+}
+
+.aside-foot .install img{
+  width: 13px;
+  vertical-align: middle;
+}
+
+.line{
+  height: 1px;
+  width: 100%;
+  background-color: gray;
+  margin: 13px 0;
+}
+
+.aside-foot .user span{
+  font-size: 20px;
+  color: white;
+}
+
+.aside-foot .user img{
+  width: 20px;
+  height: 20px;
+  background-color: #808080;
+  border-radius: 50%;
+}
+
+
+
+/* libary */
 
 .library{
   width: calc(100% - 230px);
