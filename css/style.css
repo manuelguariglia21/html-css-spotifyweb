@@ -299,6 +299,19 @@ aside nav a img{
   margin-bottom: 20px;
 }
 
+.cover.artist{
+  position: relative;
+}
+
+.cover.artist img{
+  border-radius: 50%;
+}
+
+.cover.artist .play{
+  border-radius: 50%;
+  top: 5px;
+}
+
 .play{
   display: flex;
   justify-content: center;
