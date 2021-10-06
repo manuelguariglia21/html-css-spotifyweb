@@ -257,7 +257,13 @@ aside nav a img{
 
 /* content */
 .content{
-  margin: 0 15px;
+  margin: 40px 15px;
+}
+
+.content .title{
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 10px;
 }
 
 .subtitle{
@@ -269,6 +275,7 @@ aside nav a img{
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin: 20px 0;
 }
 
 .sq{
