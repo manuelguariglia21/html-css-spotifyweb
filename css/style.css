@@ -337,10 +337,65 @@ aside nav a img{
   text-align: center;
   padding: 5px 0;
 }
+
 /* FOOTER */
 
 footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #282828;
   height: 90px;
   width: 100%;
+  padding: 0 10px;
 }
+
+.left-foot{
+  position: relative;
+  width: 210px;
+}
+
+.cover-play img{
+  width: 43px;
+  height: 43px;
+  vertical-align: middle;
+}
+
+.cover-play{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  margin-right: 13px;
+}
+
+.info-play{
+  position: absolute;
+  top: 50%;
+  left: 55px;
+  transform: translate(0, -50%);
+  font-weight: bolder;
+  vertical-align: middle;
+}
+
+.info-play .title-play{
+  font-size: 15px;
+  color: white;
+}
+.artist-play, .icon-play{
+  color: #878787;
+}
+
+.info-play .artist-play{
+  font-size: 13px;
+}
+
+.icon-play{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  font-size: 15px;
+  vertical-align: middle;
+}
+
