@@ -8,6 +8,18 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.wrapper{
+  height: 100vh;
+  width: 100%;
+}
+
 /* BUTTON */
 
 .btn a{
@@ -32,7 +44,6 @@ header{
   justify-content: space-between;
   padding: 20px 20px 0 20px;
   background-color: rgba(0, 0, 0, .5);
-  z-index: 800;
 }
 
 header .logo{
@@ -46,17 +57,18 @@ header .logo{
 /* MAIN */
 
 main{
-  display: flex;
-  height: calc(100vh - 90px);
+  height: calc(100% - 90px);
+  overflow: auto;
 }
 
 aside{
-  align-self: flex-start;
+  float: left;
   background-color: black;
   width: 230px;
-  height: calc(100vh - 90px);
+  height: 100%;
   padding-top: 96px;
   min-height: 543px;
+  overflow: hidden;
 }
 
 aside a{
@@ -65,6 +77,10 @@ aside a{
 
 aside a span{
   color: #6d6d6d;
+}
+
+aside li a span:hover {
+  color: white
 }
 
 aside .aside-start{
@@ -126,8 +142,8 @@ aside nav a img{
 }
 
 .playlist-list{
-  max-height: 25vh;
-  overflow: scroll;
+  max-height: 38vh;
+  overflow: auto;
 }
 
 .playlist-list ul{
@@ -182,18 +198,19 @@ aside nav a img{
 /* libary */
 
 .library{
+  float: left;
   width: calc(100% - 230px);
-  height: calc(100vh - 90px);
+  height: 100%;
   background-color: #141922;
   min-height: 543px;
+  overflow: auto;
+  color: white;
 }
 
 /* FOOTER */
 
 footer{
-  position: fixed;
   background-color: #282828;
   height: 90px;
   width: 100%;
-  z-index: 900;
 }
