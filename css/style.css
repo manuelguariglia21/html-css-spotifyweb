@@ -58,7 +58,6 @@ header .logo{
 
 main{
   height: calc(100% - 90px);
-  overflow: auto;
 }
 
 aside{
@@ -79,8 +78,8 @@ aside a span{
   color: #6d6d6d;
 }
 
-aside li a span:hover {
-  color: white
+aside a:hover > i, aside a:hover > span{
+  color: white;
 }
 
 aside .aside-start{
@@ -175,7 +174,7 @@ aside nav a img{
 .line{
   height: 1px;
   width: 100%;
-  background-color: gray;
+  background-color: #a3a3a3;
   margin: 13px 0;
 }
 
@@ -205,6 +204,45 @@ aside nav a img{
   min-height: 543px;
   overflow: auto;
   color: white;
+  padding-top: 113px;
+}
+
+.library .lib-menu{
+  width: 620px;
+  margin: 0 auto;
+}
+
+.lib-menu ul{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  list-style: none;
+}
+
+.lib-menu ul li{
+  position: relative;
+  font-size: 13px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.lib-menu ul li a{
+  color: #7d7f84;
+  text-decoration: none;
+}
+
+.lib-menu ul li .underscore{
+  position: absolute;
+  top: 110%;
+  bottom:0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 32px;
+  border-bottom: 3px solid transparent;
+}
+
+.lib-menu ul li .underscore.active{
+  border-bottom: 3px solid #adff2f;
 }
 
 /* FOOTER */
