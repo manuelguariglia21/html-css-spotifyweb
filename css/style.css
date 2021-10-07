@@ -70,6 +70,7 @@ header .btn:hover{
 
 main{
   height: calc(100% - 90px);
+  overflow: auto;
 }
 
 aside{
