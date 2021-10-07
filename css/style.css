@@ -301,14 +301,14 @@ aside a:hover > img{
 }
 
 .sq{
-  width: 12.3vw;
+  width: 15.3vw;
   margin-right: 15px;
 }
 
 
 
 .sq img{
-  width: 12.3vw;
+  width: 15.3vw;
   margin-bottom: 20px;
 }
 
@@ -321,8 +321,8 @@ aside a:hover > img{
 }
 
 .cover{
-  height: 12.3vw;
-  width: 12.3vw;
+  height: 15.3vw;
+  width: 15.3vw;
   position: relative;
   margin-bottom: 20px;
 }
@@ -597,5 +597,21 @@ footer{
     width: calc(100% - 50px);
   }
 
+  .cover{
+  width: 40vw;
+  height: 40vw; 
+  }
+
+  .sq{
+    width: 40vw;
+    margin-right: 2vw;
+  }
   
+  
+  
+  .sq img{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
 }
