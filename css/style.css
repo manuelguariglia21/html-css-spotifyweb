@@ -350,6 +350,8 @@ footer{
   padding: 0 10px;
 }
 
+/* left foot */
+
 .left-foot{
   position: relative;
   width: 210px;
@@ -397,5 +399,79 @@ footer{
   transform: translate(0, -50%);
   font-size: 15px;
   vertical-align: middle;
+}
+
+/* middle foot */
+
+.middle-foot{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.player{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 190px;
+  color: white;
+}
+
+.player .fa-play-circle{
+  font-size: 25px;
+}
+
+.progress-bar{
+  width: 60%;
+  margin-top: 17px;
+}
+
+.bar{
+  position: relative;
+  width: 60%;
+  height: 4px;
+  background-color: #5a5a5a;
+  border-radius: 50px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.circle{
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(0, -50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: white;
+  visibility: hidden;
+}
+
+.progress{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background-color: #c1c1c1;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.bar:hover > .progress{
+  background-color: #adff2f;
+}
+
+.bar:hover > .circle{
+  visibility: visible;
+}
+
+
+/* right foot */
+.right-foot{
+  width: 210px;
 }
 
