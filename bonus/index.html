@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css" integrity="sha512-ioRJH7yXnyX+7fXTQEKPULWkMn3CqMcapK0NNtCN8q//sW7ZeVFcbMJ9RvX99TwDg6P8rAH2IqUSt2TLab4Xmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Spotify Web</title>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <!-- HEADER -->
+    <header>
+
+      <div class="logo">
+        <img id="logo-desk" src="img/logo.svg" alt="Spotify">
+        <img id="logo-mobile" src="img/logo-small.svg" alt="Spotify">
+      </div>
+
+      <section class="button-box">
+        <div class="btn header"><a href="#"><span>Effettua l'Upgrade</span></a></div>
+      </section>
+      
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MAIN -->
+    <main class="clearfix">
+
+      <aside>
+        <section class="aside-start">
+          <!-- nav -->
+          <nav>
+            <ul>
+
+              <li><a href="#" class="active"><img src="img/home.svg" alt="Home"><span>Home</span></a></li>
+
+              <li><a href="#"><img src="img/search.svg" alt="Cerca"><span>Cerca</span></a></li>
+
+              <li><a href="#"><img src="img/libreria.svg" alt="Libreria"><span>La tua libreria</span></a></li>
+
+            </ul>
+          </nav>
+          <!-- /nav -->
+
+          <!-- playlist -->
+          <div class="playlist">
+            <div class="playlist-top">
+              <h4>Playlist</h4>
+              <a href="#">
+                <i class="fas fa-plus-square"></i>
+                <span>Crea Playlist</span>
+              </a>
+            </div>
+
+            <div class="playlist-list">
+              <ul>
+                <li><a href="#"><span>Nome Playlist</span></a></li>
+                <li><a href="#"><span>Nome Playlist</span></a></li>
+                <li><a href="#"><span>Nome Playlist</span></a></li>
+                <li><a href="#"><span>Nome Playlist</span></a></li>
+                <li><a href="#"><span>Nome Playlist</span></a></li>
+                <li><a href="#"><span>Nome Playlist</span></a></li>
+                <li><a href="#"><span>Nome Playlist</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /playlist -->
+        </section>
+
+        <!-- aside-foot -->
+        <section class="aside-foot">
+          <div class="install">
+            <a href="#">
+              <img src="img/download.svg" alt="Install">
+              <span>Installa app</span>
+            </a>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="user">
+            <a href="#">
+              <img src="img/profile.svg" alt="Install">
+              <span>Jhon Doe</span>
+            </a>
+          </div>
+
+
+        </section>
+        <!-- /aside foot -->
+
+      </aside>
+
+      <section class="library">
+
+        <!-- lib-menu -->
+        <div class="lib-menu">
+          <ul>
+            
+            <li>
+              <a href="#"><span>in evidenza</span><div class="underscore active"></div></a>
+            </li>
+            <li>
+              <a href="#"><span>podcast</span><div class="underscore"></div></a>
+            </li>
+            <li>
+              <a href="#"><span>classifiche</span><div class="underscore"></div></a>
+            </li>
+            <li>
+              <a href="#"><span>generi e mood</span><div class="underscore"></div></a>
+            </li>
+            <li>
+              <a href="#"><span>nuove uscite</span><div class="underscore"></div></a>
+            </li>
+            <li>
+              <a href="#"><span>scopri</span><div class="underscore"></div></a>
+            </li>
+
+          </ul>
+        </div>
+        <!-- /lib-menu -->
+
+        <!-- content -->
+        <div class="content">
+
+          <!-- recently played -->
+          <div class="recently">
+            <p class="title">Recently played</p>
+            <div class="row-sq">
+
+              <div class="sq">
+                <div class="cover">
+                  <div class="play"><i class="far fa-play-circle"></i></div>
+                  <img src="img/metal_lifting.jpg" alt="Heavy Metal">
+                </div>
+
+                <p class="title-sq">Heavy Metal</h4>
+                <p class="subtitle artist">Subtitle</p>
+              </div>
+
+              <div class="sq">
+                <div class="cover">
+                  <div class="play"><i class="far fa-play-circle"></i></div>
+                  <img src="img/stranger.jpeg" alt="Stranger Things">
+                </div>
+
+                <p class="title-sq">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                <p class="subtitle artist">Kyle Dixon & Michael Stein</p>
+              </div>
+
+              <div class="sq">
+                <div class="cover">
+                  <div class="play"><i class="far fa-play-circle"></i></div>
+                  <img src="img/aquietplace.jpeg" alt="A quiet place">
+                </div>
+
+                <p class="title-sq">A quiet place</h4>
+                <p class="subtitle artist">Subtitle</p>
+              </div>
+
+              <div class="sq">
+                <div class="cover">
+                  <div class="play"><i class="far fa-play-circle"></i></div>
+                  <img src="img/split.jpeg" alt="Split">
+                </div>
+
+                <p class="title-sq">Split</h4>
+                <p class="subtitle artist">Subtitle</p>
+              </div>
+
+              <div class="sq">
+                <div class="cover">
+                  <div class="play"><i class="far fa-play-circle"></i></div>
+                  <img src="img/cure.jpeg" alt="A cure for wellness">
+                </div>
+
+                <p class="title-sq">A cure for wellness</h4>
+                <p class="subtitle artist">Subtitle</p>
+              </div>
+
+              <div class="sq">
+                <div class="cover">
+                  <div class="play"><i class="far fa-play-circle"></i></div>
+                  <img src="img/sinister.jpeg" alt="Sinister">
+                </div>
+
+                <p class="title-sq">Sinister</h4>
+                <p class="subtitle artist">Subtitle</p>
+              </div>
+
+            </div>
+          </div>
+          <!-- /recently played -->
+
+          <!-- created for you -->
+          <div class="created">
+            <p class="title">Creato per Jhon Doe</p>
+            <p class="subtitle">Più ascolti, più accurati saranno i suggerimenti</p>
+            <div class="row-sq">
+
+              <div class="sq">
+                <div class="cover">
+                  <div class="play"><i class="far fa-play-circle"></i></div>
+                  <img src="img/radar.jpeg" alt="Release Radar">
+                </div>
+
+                <p class="title-sq">Release Radar</h4>
+              </div>
+
+              <div class="sq">
+                <div class="cover">
+                  <div class="play"><i class="far fa-play-circle"></i></div>
+                  <img src="img/mixdaily.jpeg" alt="Daily Mix 1">
+                </div>
+
+                <p class="title-sq">Daily Mix 1</h4>
+              </div>
+
+              <div class="sq">
+                <div class="cover">
+                  <div class="play"><i class="far fa-play-circle"></i></div>
+                  <img src="img/mixdaily.jpeg" alt="Daily Mix 1">
+                </div>
+
+                <p class="title-sq">Daily Mix 1</h4>
+              </div>
+
+            </div>
+          </div>
+          <!-- /created for you -->
+
+          <!-- popular artist -->
+          <div class="created">
+            <p class="title">Artisti più popolari</p>
+            <p class="subtitle">Più ascolti, più accurati saranno i suggerimenti</p>
+            <div class="row-sq">
+
+              <div class="sq">
+                <div class="cover artist">
+                  <div class="play"><i class="far fa-play-circle"></i></div>
+                  <img src="img/youg.jpeg" alt="Lana Del Rey">
+                </div>
+
+                <p class="title-sq">Lana Del Rey</h4>
+              </div>
+
+              <div class="sq">
+                <div class="cover artist">
+                  <div class="play"><i class="far fa-play-circle"></i></div>
+                  <img src="img/einaudi.jpeg" alt="Einaudi">
+                </div>
+
+                <p class="title-sq">Einaudi</h4>
+              </div>
+
+            </div>
+          </div>
+          <!-- /popular artist -->
+
+        </div>
+        <!-- /content -->
+        
+        
+      </section>
+
+    </main>
+    <!-- /MAIN -->
+
+    <!-- FOOTER -->
+    <footer>
+      <section class="left-foot">
+        <div class="cover-play">
+          <img src="img/sinister.jpeg" alt="Sinister">
+        </div>
+        <div class="info-play">
+          <p class="title-play">Sinister</p>
+          <p class="artist-play">Brano nome</p>
+        </div>
+        <div class="icon-play">
+          <i class="far fa-heart"></i>
+          <i class="far fa-folder"></i>
+        </div>
+      </section>
+
+      <section class="middle-foot">
+        <div class="player">
+          <i class="fas fa-random"></i>
+          <i class="fas fa-step-backward"></i>
+          <i class="far fa-play-circle"></i>
+          <i class="fas fa-step-forward"></i>
+          <i class="fas fa-redo-alt"></i>
+        </div>
+
+        <div class="progress-bar">
+
+          <div class="time">
+            <span>0:25</span>
+          </div>
+
+          <div class="bar">
+            <div class="progress"></div>
+            <div class="circle"></div>
+          </div>
+
+          <div class="duration">
+            <span>4:35</span>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="right-foot">
+        <i class="fas fa-list"></i>
+        <i class="fas fa-desktop"></i>
+        <i class="fas fa-volume-up"></i>
+        <div class="bar">
+          <div class="progress"></div>
+          <div class="circle"></div>
+        </div>
+      </section>
+
+    </footer>
+    <!-- /FOOTER -->
+
+  </div>
+  
+</body>
+</html>
