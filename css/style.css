@@ -30,7 +30,7 @@ body{
 }
 
 .btn a span{
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bolder;
   color: white;
   text-transform: uppercase;
@@ -51,6 +51,10 @@ header{
 
 header .logo{
   width: 130px;
+}
+
+header .btn:hover{
+  transform: scale(1.1);
 }
 
 .button-box{
@@ -117,11 +121,19 @@ aside nav ul li .active span{
   color: white;
 }
 
-
 aside nav a img{
   width: 21px;
   vertical-align: middle;
   margin-right: 9px;
+  filter: brightness(50%);
+}
+
+.install img{
+  filter: brightness(50%);
+}
+
+aside a:hover > img{
+  filter: brightness(100%);
 }
 
 /* playlist */
@@ -217,7 +229,7 @@ aside nav a img{
 
 .lib-menu ul{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-content: center;
   flex-wrap: wrap;
   list-style: none;
@@ -225,10 +237,14 @@ aside nav a img{
 
 .lib-menu ul li{
   position: relative;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: bolder;
   text-transform: uppercase;
-  margin: 5px 10px;
+  margin: 5px 25px 5px 0;
+}
+
+.lib-menu ul li:last-of-type{
+  margin: 5px 0;
 }
 
 .lib-menu ul li a{
@@ -262,13 +278,13 @@ aside nav a img{
 }
 
 .content .title{
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bolder;
   margin-bottom: 10px;
 }
 
 .subtitle{
-  font-size: 15px;
+  font-size: 12px;
   font-weight: bold;
   color: #6e7176;
 }
@@ -354,8 +370,9 @@ footer{
 /* left foot */
 
 .left-foot{
-  position: relative;
-  width: 210px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .cover-play img{
@@ -365,20 +382,13 @@ footer{
 }
 
 .cover-play{
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
   margin-right: 13px;
 }
 
 .info-play{
-  position: absolute;
-  top: 50%;
-  left: 55px;
-  transform: translate(0, -50%);
   font-weight: bolder;
   vertical-align: middle;
+  margin-right: 40px;
 }
 
 .info-play .title-play{
@@ -391,15 +401,22 @@ footer{
 
 .info-play .artist-play{
   font-size: 13px;
+  cursor: pointer;
+}
+
+.info-play .artist-play:hover{
+  color: white;
+  text-decoration: underline;
 }
 
 .icon-play{
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(0, -50%);
   font-size: 15px;
   vertical-align: middle;
+  cursor: pointer;
+}
+
+.icon-play i:hover{
+  color: white;
 }
 
 /* middle foot */
@@ -418,10 +435,15 @@ footer{
   align-items: center;
   width: 190px;
   color: white;
+  cursor: pointer;
 }
 
 .player .fa-play-circle{
   font-size: 25px;
+}
+
+.player .fa-play-circle:hover{
+  transform: scale(1.1);
 }
 
 .progress-bar{
@@ -447,8 +469,8 @@ footer{
   top: 50%;
   left: 20%;
   transform: translate(0, -50%);
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: white;
   visibility: hidden;
@@ -478,12 +500,6 @@ footer{
   font-size: 9px;
 }
 
-.time{
-}
-
-.duration{
-}
-
 
 /* right foot */
 .right-foot{
@@ -497,6 +513,7 @@ footer{
   font-size: 15px;
   padding-right: 15px;
   color: white;
+  cursor: pointer;
 }
 
 .right-foot .bar{
