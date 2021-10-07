@@ -616,3 +616,15 @@ footer{
   }
 
 }
+
+/* only player view */
+
+@media screen and (max-height: 90px){
+  header{
+    display: none;
+  }
+
+  main{
+    display: none;
+  }
+}
