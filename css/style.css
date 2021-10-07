@@ -49,8 +49,13 @@ header{
   z-index: 900;
 }
 
-header .logo{
+header .logo #logo-desk{
   width: 130px;
+}
+
+header .logo #logo-mobile{
+  width: 30px;
+  visibility: hidden;
 }
 
 header .btn:hover{
@@ -451,6 +456,7 @@ footer{
   justify-content: center;
   align-items: baseline;
   width: 60%;
+  min-width: 190px;
   margin-top: 17px;
 }
 
@@ -518,6 +524,71 @@ footer{
 
 .right-foot .bar{
   margin: 0;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 576px){
+  /* mobile */
+  
+  header{
+    padding: 20px 0 0 10px;
+  }
+
+  header .logo #logo-desk{
+    display: none;
+  }
+  
+  header .logo #logo-mobile{
+    visibility: visible;
+  }
+
+  aside {
+    width: 50px;
+  }
+
+  aside nav a span{
+    display: none;
+  }
+
+  aside nav ul li .active, aside nav ul li a{
+    padding: 7px 11px;
+    border-left: 3px solid transparent;
+  }
+
+  .playlist, aside a span, .line{
+    display: none;
+  }
+
+  .aside-foot {
+    padding: 0 11px;
+  }
+
+  .install, .user{
+    text-align: center;
+  }
+
+  .install{
+    margin-bottom: 22px;
+  }
+
+  .cover-play img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .info-play{
+    margin-right: 25px;
+  }
+
+  
+
+  .library {
+    width: calc(100% - 50px);
+  }
+
+  
 }
 
 
