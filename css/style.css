@@ -46,6 +46,7 @@ header{
   justify-content: space-between;
   padding: 20px 5px 0 20px;
   background-color: rgba(0, 0, 0, .5);
+  z-index: 900;
 }
 
 header .logo{
@@ -408,7 +409,7 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 50%;
 }
 
 .player{
@@ -424,6 +425,9 @@ footer{
 }
 
 .progress-bar{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
   width: 60%;
   margin-top: 17px;
 }
@@ -434,7 +438,7 @@ footer{
   height: 4px;
   background-color: #5a5a5a;
   border-radius: 50px;
-  margin: 0 auto;
+  margin: 0 15px;
   cursor: pointer;
 }
 
@@ -443,8 +447,8 @@ footer{
   top: 50%;
   left: 20%;
   transform: translate(0, -50%);
-  width: 5px;
-  height: 5px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background-color: white;
   visibility: hidden;
@@ -469,9 +473,34 @@ footer{
   visibility: visible;
 }
 
+.time, .duration{
+  color: white;
+  font-size: 9px;
+}
+
+.time{
+}
+
+.duration{
+}
+
 
 /* right foot */
 .right-foot{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   width: 210px;
 }
+
+.right-foot i{
+  font-size: 15px;
+  padding-right: 15px;
+  color: white;
+}
+
+.right-foot .bar{
+  margin: 0;
+}
+
 
