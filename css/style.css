@@ -425,9 +425,9 @@ footer{
   text-decoration: underline;
 }
 
-.icon-play{
+.icon-play {
   font-size: 15px;
-  vertical-align: middle;
+  text-align: right;
   cursor: pointer;
 }
 
